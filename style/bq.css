@@ -1,0 +1,186 @@
+/* bq 自定义主题 */
+/* 最左侧菜单栏 */
+.jp-LabShell {
+  background-color: #fff;
+}
+.jp-SideBar .lm-TabBar-tab {
+  padding: 0 12px;
+}
+.jp-SideBar .lm-TabBar-tab.lm-mod-current {
+  min-height: auto;
+}
+.jp-SideBar.lm-TabBar.jp-mod-left
+  .lm-TabBar-tab
+  + .lm-TabBar-tab.lm-mod-current,
+.jp-SideBar.lm-TabBar.jp-mod-left
+  .lm-TabBar-tab.lm-mod-current
+  + .lm-TabBar-tab,
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab + .lm-TabBar-tab {
+  border-right: none;
+}
+
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab.lm-mod-current:last-child {
+  border-left: none;
+}
+
+/* 左侧 */
+.jp-InputGroup input {
+  border-radius: 3px;
+  border: 1px solid var(--jp-input-border-color);
+  box-shadow: none;
+}
+.jp-InputGroup input:focus {
+  border: 1px solid var(--jp-brand-color1);
+}
+.jp-FileBrowser,
+.jp-DirListing-content {
+  background-color: var(--jp-layout-color0);
+  font-size: 14px;
+}
+.jp-DirListing-headerItem {
+  display: flex;
+  height: var(--bq-folder-item-height);
+  align-items: center;
+  box-sizing: border-box;
+}
+.jp-DirListing-headerItemText {
+  margin-right: 4px;
+}
+
+.jp-DirListing-item {
+  height: var(--bq-folder-item-height);
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.jp-DirListing-itemText {
+  color: #444;
+}
+.jp-DirListing-itemModified {
+  color: #999;
+}
+
+.jp-DirListing-item.jp-mod-selected .jp-icon-selectable[fill] {
+  fill: #444;
+}
+
+.jp-DirListing-item:hover:not(.jp-mod-selected),
+.jp-DirListing-item.jp-mod-selected {
+  background-color: var(--jp-layout-color1);
+}
+
+.jp-DirListing-item:hover:not(.jp-mod-selected),
+.jp-DirListing-item.jp-mod-selected {
+  color: #444;
+}
+
+.jp-FileBrowser-toolbar.jp-Toolbar {
+  margin: 0;
+  /* justify-content: space-between; */
+  height: 44px;
+}
+.jp-FileBrowser-toolbar.jp-Toolbar .jp-Toolbar-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+}
+
+#jp-left-stack {
+  border-right-color: var(--jp-border-color0);
+  border-right: none;
+}
+
+.p-SplitPanel[data-orientation='horizontal'] > .p-SplitPanel-handle,
+.lm-SplitPanel[data-orientation='horizontal']
+  > .lm-SplitPanel-handle
+  #jp-main-dock-panel {
+  background-color: #fff;
+  padding: 0;
+}
+/* tab */
+#jp-main-dock-panel {
+  padding: 0;
+}
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+  color: #333;
+  padding: 0 14px 0 23px;
+  border-top: none;
+  border-left: none;
+  border-color: #fff;
+}
+.lm-DockPanel-tabBar .lm-TabBar-tab:last-of-type {
+  border-right: none;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+  background-color: var(--jp-layout-color0);
+}
+.lm-DockPanel-tabBar > .lm-TabBar-content,
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+  background-color: var(--jp-layout-color5);
+}
+
+.jp-RunningSessions,
+.jp-TableOfContents,
+.jp-TableOfContents-content {
+  background-color: var(--jp-layout-color0);
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
+  display: none;
+}
+
+.jp-Toolbar {
+  border-color: var(--jp-border-color0);
+}
+
+.lm-DockPanel-tabBar {
+  border-bottom: none;
+}
+
+.p-SplitPanel[data-orientation='horizontal'] > .p-SplitPanel-handle,
+.lm-SplitPanel[data-orientation='horizontal']
+  > .lm-SplitPanel-handle
+  #jp-main-dock-panel {
+  background-color: var(--jp-border-color0);
+}
+
+.lm-TabBar-tabCloseIcon {
+  display: none;
+}
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover .lm-TabBar-tabCloseIcon,
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current .lm-TabBar-tabCloseIcon {
+  display: flex;
+}
+
+.lm-DockPanel-widget {
+  border: none;
+}
+
+.jp-NotebookPanel-toolbar {
+  border-color: var(--jp-border-color0);
+}
+
+.p-SplitPanel[data-orientation='horizontal'] > .p-SplitPanel-handle,
+.lm-SplitPanel[data-orientation='horizontal']
+  > .lm-SplitPanel-handle
+  #jp-main-dock-panel {
+  background-color: var(--jp-border-color0);
+}
+
+/* 代码行激活时的类名 */
+/* .jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor */
+
+/* 属性栏 */
+.jp-NotebookTools {
+  background-color: var(--jp-layout-color0);
+}
+
+/* status */
+#jp-main-statusbar {
+  background-color: var(--jp-layout-color5);
+}

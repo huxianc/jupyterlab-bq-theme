@@ -1,0 +1,76 @@
+/* 左侧工具栏 */
+.jp-SideBar.lm-TabBar.jp-mod-left {
+  border-color: #eee;
+}
+/* 每个功能item */
+.jp-SideBar .lm-TabBar-tab {
+  padding: 0 12px;
+}
+.jp-SideBar.lm-TabBar {
+  /* max-width: 50px; */
+  background: #fff;
+}
+.jp-SideBar .lm-TabBar-tab:not(.lm-mod-current),
+#jp-down-stack .lm-TabBar-tab:not(.lm-mod-current) {
+  background: #fff;
+}
+.jp-SideBar.lm-TabBar.jp-mod-left
+  .lm-TabBar-tab
+  + .lm-TabBar-tab.lm-mod-current {
+  border: none;
+}
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab + .lm-TabBar-tab,
+.jp-SideBar.lm-TabBar.jp-mod-left
+  .lm-TabBar-tab.lm-mod-current
+  + .lm-TabBar-tab {
+  border: none;
+}
+.jp-SideBar .lm-TabBar-tab.lm-mod-current {
+  min-height: auto;
+  background: #f7f7f7;
+}
+
+/* 第二列  文件 */
+.jp-FileBrowser-toolbar.jp-Toolbar {
+  margin: 0;
+  /* justify-content: space-between; */
+  height: 44px;
+}
+.jp-FileBrowser-toolbar.jp-Toolbar .jp-Toolbar-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+}
+
+/* 平分了宽度 应该不会有超出的情况 */
+.jp-Toolbar:hover {
+  overflow-x: hidden;
+}
+
+.jp-DirListing-headerItem.jp-id-name {
+  display: flex;
+}
+
+.jp-DirListing-item {
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.jp-DirListing-itemText {
+  color: #444;
+}
+.jp-DirListing-itemModified {
+  color: #999;
+}
+.jp-DirListing-item.jp-mod-selected .jp-DirListing-itemText,
+.jp-DirListing-item.jp-mod-selected .jp-DirListing-itemModified {
+  color: #fff;
+}
+.jp-DirListing-item:hover:not(.jp-mod-selected) .jp-DirListing-itemText {
+  color: #333;
+}
